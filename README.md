@@ -2,7 +2,7 @@
 
 A simple personal task tracker built with AI assistance for Engineering Design 2. Users can create an account, log in, add tasks, view them, edit titles/details, mark tasks complete, delete them, and log out. Supabase Auth and a PostgreSQL `tasks` table store each user's data separately with row level security.
 
-**Live application:** Add your Netlify URL here after deploying.
+**Live application:** spectacular-florentine-cd1714.netlify.app
 
 **3–5 minute demo video:** Add your unlisted YouTube URL here after recording.
 
