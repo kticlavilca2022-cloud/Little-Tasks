@@ -4,7 +4,7 @@ A simple personal task tracker built with AI assistance for Engineering Design 2
 
 **Live application:** spectacular-florentine-cd1714.netlify.app
 
-**3–5 minute demo video:** Add your unlisted YouTube URL here after recording.
+**3–5 minute demo video:** https://youtu.be/_Xxm0_Tv0dY
 
 ## Technologies
 
