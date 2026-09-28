@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header><span class="eyebrow">A simple place to keep track</span><h1>Little Tasks <span aria-hidden="true">✦</span></h1><p>Add a task, make progress, and enjoy checking it off.</p></header>
+    <section id="notice" class="notice" role="status" hidden></section>
+    <section id="auth-view" class="card">
+      <h2 id="auth-title">Welcome back</h2>
+      <form id="auth-form">
+        <label>Email<input id="email" type="email" autocomplete="email" required /></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" minlength="6" required /></label>
+        <button id="auth-submit" type="submit">Log in</button>
+      </form>
+      <p class="switch"><span id="auth-prompt">New here?</span> <button class="text-button" id="auth-toggle" type="button">Create an account</button></p>
+    </section>
+    <section id="app-view" hidden>
+      <div class="toolbar"><span id="signed-in-as"></span><button id="logout" class="outline" type="button">Log out</button></div>
+      <section class="card"><h2 id="form-title">Add a task</h2>
+        <form id="task-form"><label>What needs doing?<input id="task-title" maxlength="120" placeholder="e.g. Finish my assignment" required /></label>
+          <label>Details (optional)<textarea id="task-details" maxlength="500" rows="3" placeholder="A little reminder for later"></textarea></label>
+          <div class="actions"><button id="save-task" type="submit">Add task</button><button id="cancel-edit" class="outline" type="button" hidden>Cancel</button></div>
+        </form>
+      </section>
+      <section class="tasks-heading"><h2>My tasks</h2><span id="task-count"></span></section>
+      <ul id="task-list" class="task-list"></ul><p id="empty-state" class="empty" hidden>No tasks yet. Add your first one above!</p>
+    </section>
+  </main>
+</body>
+</html>
